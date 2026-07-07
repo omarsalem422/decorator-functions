@@ -1,14 +1,12 @@
 import time
 
-def timer_dec(base_fn):
-    # Code to decorate
-    #return enhanced_fn
-    pass
-
-
-@timer_dec
 def brew_tea():
     # Code to brew
-    pass
+    start_time = time.time()
+    print("Brewing tea...")
+    time.sleep(1)
+    print("Tea is ready!")  
+    end_time = time.time()
+    print(f"Tea brewing time: {end_time - start_time} seconds")
     
-brew_tea()
+brew_tea()  
